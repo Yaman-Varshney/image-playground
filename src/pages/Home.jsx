@@ -46,7 +46,10 @@ const Home = () => {
         <>
           <h1 className="text-center mb-4">Image Caption Editor</h1>
 
-          <div className="row justify-content-center mb-4">
+          <div style={{textAlign: 'start'}}>Name: Yaman varshney</div>
+          <div style={{textAlign: 'start'}}>Email: lal44mohan@gmail.com</div>
+
+          <div className="row justify-content-center mb-4 mt-5">
             <div className="col-md-6">
               <div className="input-group">
                 <input
