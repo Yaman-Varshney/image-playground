@@ -20,7 +20,7 @@ const Home = () => {
     setLoading(true); // Start loading
     try {
       const res = await fetch(
-        `https://pixabay.com/api/?key=49731089-96e0c2f2b0df16a0fad684ff8&q=${encodeURIComponent(query)}&image_type=photo&per_page=12`
+        `https://pixabay.com/api/?key=${process.env.REACT_APP_API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=12`
       );
 
       if (!res.ok) {
